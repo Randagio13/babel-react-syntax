@@ -1,7 +1,7 @@
 {
   "name": "babel-react-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A simple colorful for Babel ES6 Javascript",
   "keywords": [
     "syntax",
