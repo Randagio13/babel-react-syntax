@@ -9,7 +9,7 @@
     "babel",
     "react"
   ],
-  "repository": "https://github.com/atom/babel-react-syntax",
+  "repository": "https://github.com/iMasterAle/babel-react-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

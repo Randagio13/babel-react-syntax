@@ -1,0 +1,25 @@
+.source.css {
+
+  // highlight properties/values if they are supported
+  .property-name{
+    color: @hue-5;
+    &.support {
+      font-style: italic;
+    }
+  }
+
+  .property-value {
+    color: @mono-1;
+    &.support {
+      font-style: italic;
+    }
+    &.constant{
+      color: @mono-2;
+    }
+  }
+
+  .parent-selector.css{
+    color: @hue-3;
+  }
+
+}

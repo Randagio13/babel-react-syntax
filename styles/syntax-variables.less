@@ -1,31 +1,58 @@
 @import "colors";
 
-// This defines all syntax variables that syntax themes must implement when they
-// include a syntax-variables.less file.
+// Official Syntax Variables -----------------------------------
 
 // General colors
-@syntax-text-color: @very-light-gray;
-@syntax-cursor-color: white;
-@syntax-selection-color: lighten(@dark-gray, 10%);
-@syntax-background-color: @very-dark-gray;
+@syntax-text-color:            @syntax-fg;
+@syntax-cursor-color:          @syntax-accent;
+@syntax-selection-color:       lighten(@syntax-background-color, 10%);
+@syntax-selection-flash-color: @syntax-accent;
+@syntax-background-color:      @syntax-bg;
 
 // Guide colors
-@syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @gray;
-@syntax-invisible-character-color: @gray;
+@syntax-wrap-guide-color:          @syntax-guide;
+@syntax-indent-guide-color:        @syntax-guide;
+@syntax-invisible-character-color: @syntax-guide;
 
 // For find and replace markers
-@syntax-result-marker-color: @light-gray;
-@syntax-result-marker-color-selected: white;
+@syntax-result-marker-color:          @syntax-fg;
+@syntax-result-marker-color-selected: @syntax-accent;
 
 // Gutter colors
-@syntax-gutter-text-color: @very-light-gray;
-@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: @dark-gray;
-@syntax-gutter-background-color-selected: @gray;
+@syntax-gutter-text-color:                lighten(@syntax-comment, 5%);
+@syntax-gutter-text-color-selected:       lighten(@syntax-fg, 10%);
+@syntax-gutter-background-color:          lighten(@syntax-bg, 2%); // unused
+@syntax-gutter-background-color-selected: lighten(@syntax-background-color, 10%);
+//Gutter custom
+@syntax-gutter-custom-number-bg: darken(@syntax-bg, 5%);
 
-// For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
-@syntax-color-added: @green;
-@syntax-color-modified: @orange;
-@syntax-color-removed: @red;
+// Git colors - For git diff info. i.e. in the gutter
+@syntax-color-renamed:  @hue-1;
+@syntax-color-added:    lime;
+@syntax-color-modified: yellow;
+@syntax-color-removed:  red;
+
+// For language entity colors
+@syntax-color-variable:   @hue-5;
+@syntax-color-constant:   @hue-6;
+@syntax-color-property:   @syntax-fg;
+@syntax-color-value:      @syntax-fg;
+@syntax-color-function:   @hue-2;
+@syntax-color-method:     @hue-4;
+@syntax-color-class:      @hue-4;
+@syntax-color-keyword:    @hue-3;
+@syntax-color-tag:        @hue-5;
+@syntax-color-attribute:  @hue-6;
+@syntax-color-import:     @hue-3;
+@syntax-color-snippet:    @hue-6-2;
+
+
+// Custom Syntax Variables -----------------------------------
+// Don't use in packages
+
+@syntax-cursor-line: hsla(@syntax-hue, 100%,  80%, .04); // needs to be semi-transparent to show serach results
+
+@syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-illegal-fg:    white;
+@syntax-illegal-bg:    @syntax-color-removed;

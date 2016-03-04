@@ -1,0 +1,44 @@
+.html {
+
+  .meta.tag{
+    color: @mono-1;
+    &.any {
+      color: @mono-1;
+    }
+  }
+
+  .entity.name.tag {
+    &.block, &.inline, &.name {
+      color: @hue-3;
+    }
+  }
+  .entity.other.attribute-name{
+    color: @hue-4;
+    &.html{
+      color: @hue-4;
+    }
+    &.id.html {
+      color: @hue-4;
+    }
+  }
+
+  .punctuation.separator.key-value {
+    color: @mono-1;
+  }
+
+  .string.quoted.double {
+    color: @hue-6;
+
+    .punctuation.definition.string {
+      &.begin, &.end {
+        color: @hue-6;
+      }
+
+      .separator.key-value.html {
+        color: @hue-4;
+      }
+
+    }
+  }
+
+}
