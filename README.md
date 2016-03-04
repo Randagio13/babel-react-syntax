@@ -1,4 +1,4 @@
-# babel-react-syntax theme
+# babel-react-syntax
 
 A simple colorful for Babel ES6 Javascript.
 
