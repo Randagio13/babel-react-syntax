@@ -1,0 +1,17 @@
+{
+  "name": "babel-react-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A simple colorful for Babel ES6 Javascript",
+  "keywords": [
+    "syntax",
+    "theme",
+    "babel",
+    "react"
+  ],
+  "repository": "https://github.com/atom/babel-react-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
