@@ -14,3 +14,61 @@
 @import './languages/html';
 @import './languages/jsx';
 @import './languages/ts';
+
+atom-text-editor::shadow {
+  .source.js.jsx {
+    & span.constant.other.object.key.js {
+      & span.string.unquoted.js {
+        color: #ff7569;
+      }
+    }
+    & span.meta.function-call.static.with-arguments.js {
+      & span.variable.other.class.js {
+        color: #8e70e4;
+      }
+    }
+    & span.meta.function-call.with-arguments.js{
+      & span.meta.tag.jsx {
+        & span.entity.other.attribute-name.jsx {
+          color: #5db9e4;
+        }
+      }
+    }
+    & span.meta.class.body.js {
+      & span.meta.group.braces.curly {
+        & span.support.type.object.console.js {
+          color: #b11e5b;
+        }
+        & span.support.function.console.js {
+          color: #a389eb;
+        }
+        & span.variable.language.this.js {
+          color: #ee3486;
+        }
+        & span.meta.property.object.js {
+          & span.variable.other.property.js {
+            color: #6ef7f0;
+          }
+        }
+        & span.variable.other.object.js {
+          color: #8e70e4;
+        }
+        & span.variable.other.readwrite.js {
+          color: #83ff6c;
+        }
+      }
+      & span.meta.function.arrow.js {
+        & span.variable.other.readwrite.js {
+          color: #f5b544;
+        }
+      }
+      & span.meta.group.braces.round {
+        & span.meta.tag.jsx {
+          & span.entity.other.attribute-name.jsx {
+            color: #5db9e4;
+          }
+        }
+      }
+    }
+  }
+}
