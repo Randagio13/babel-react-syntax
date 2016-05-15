@@ -1,7 +1,10 @@
 .source.jsx {
+  .entity.name.class.js {
+    color: @petroil;
+  }
   .meta.group.braces.curly {
     .support.type.object.console.js {
-      color: #b11e5b;
+      color: @i-purple;
     }
     .support.function.console.js {
       color: #a389eb;
@@ -11,14 +14,14 @@
     }
     .meta.property.object.js {
       .variable.other.property.js {
-        color: #6ef7f0;
+        color: @light-blue;
       }
     }
     .variable.other.object.js {
-      color: #8e70e4;
+      color: @violet;
     }
     .variable.other.readwrite.js {
-      color: #83ff6c;
+      color: @green-highlighter;
     }
   }
   .entity.name.tag{
@@ -31,10 +34,10 @@
   }
   .meta.function-call.static.with-arguments.js {
     .variable.other.class.js {
-      color: #8e70e4;
+      color: @violet;
     }
   }
-  .meta.function-call.with-arguments.js{
+  .meta.function-call.with-arguments.js {
     .meta.tag.jsx {
       .entity.other.attribute-name.jsx {
         color: #5db9e4;
@@ -42,9 +45,32 @@
     }
   }
   .meta.class.body.js {
+    .support.type.object.console.js {
+      color: #ee3486;
+    }
+    .support.function.console.js {
+      color: #bdc0f9;
+    }
+    .variable.language.this.js {
+      color: #ee3486;
+    }
+    .variable.other.property.static.js {
+      color: #bdc0f9;
+    }
+    .variable.other.property.js {
+      color: @light-blue;
+    }
+    .meta.property.object.js {
+      .variable.other.property.static.js {
+        color: #bdc0f9;
+      }
+      .variable.other.property.js {
+        color: @light-blue;
+      }
+    }
     .meta.group.braces.curly {
       .support.type.object.console.js {
-        color: #b11e5b;
+        color: @i-purple;
       }
       .support.function.console.js {
         color: #a389eb;
@@ -62,14 +88,14 @@
       }
       .meta.property.object.js {
         .variable.other.property.js {
-          color: #6ef7f0;
+          color: @light-blue;
         }
       }
       .variable.other.object.js {
-        color: #8e70e4;
+        color: @violet;
       }
       .variable.other.readwrite.js {
-        color: #83ff6c;
+        color: @green-highlighter;
       }
       .meta.tag.jsx {
         .entity.other.attribute-name.jsx {
@@ -87,6 +113,21 @@
         .entity.other.attribute-name.jsx {
           color: #5db9e4;
         }
+      }
+    }
+  }
+  .meta.tag.jsx {
+    .entity.name.tag.open.jsx {
+      .support.class.component.open.jsx {
+        color: @hue-3;
+      }
+    }
+    .entity.other.attribute-name.jsx {
+      color: #5db9e4;
+    }
+    .entity.name.tag.close.jsx {
+      .support.class.component.close.jsx {
+        color: @hue-3;
       }
     }
   }

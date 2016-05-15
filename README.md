@@ -2,4 +2,4 @@
 
 A simple colorful for Babel ES6 Javascript.
 
-![](./Example.png)
+![](https://res.cloudinary.com/randagio13/image/upload/v1463329268/Example_xazaws.png)
