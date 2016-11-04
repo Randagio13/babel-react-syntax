@@ -1,16 +1,44 @@
 .source.jsx {
-  .entity.name.class.js {
-    color: @petroil;
+  // ### KEYWORD START ###
+  .keyword.control.module.js {
+    color: @keyword;
   }
+  // ### KEYWORD END ###
+  // ### VARIABLE START ###
+  .variable.other.readwrite.js {
+    color: @variable;
+  }
+  // ### VARIABLE END ###
+  // ### STRING START ###
+  .string.quoted.module.js {
+    color: #71eeb8;
+  }
+  .punctuation.definition.string.begin.js {
+    color: #71eeb8;
+  }
+  .punctuation.definition.string.end.js {
+    color: #71eeb8;
+  }
+  // ### STRING END ###
+  // ### DECORATOR START ###
+  .meta.tag.decorator {
+    .keyword.operator.decoration.js {
+      color: @keyword;
+    }
+    .variable.other.readwrite.js {
+      color: #b488ea;
+    }
+  }
+  // ### DECORATOR END ###
   .meta.group.braces.curly {
     .support.type.object.console.js {
       color: @i-purple;
     }
     .support.function.console.js {
-      color: #a389eb;
+      color: @light-violet;
     }
     .variable.language.this.js {
-      color: #ee3486;
+      color: @highligth-rose;
     }
     .meta.property.object.js {
       .variable.other.property.js {
@@ -44,78 +72,99 @@
       }
     }
   }
-  .meta.class.body.js {
-    .support.type.object.console.js {
-      color: #ee3486;
+  // ### CLASS START ###
+  .entity.name.class.js {
+    color: #6db4ff;
+  }
+  .meta.class {
+    .storage.type {
+      &.class.js {
+        color: #abefff;
+      }
+      &.extends.js {
+        color: #abefff;
+      }
     }
-    .support.function.console.js {
-      color: #bdc0f9;
-    }
-    .variable.language.this.js {
-      color: #ee3486;
-    }
-    .variable.other.property.static.js {
-      color: #bdc0f9;
-    }
-    .variable.other.property.js {
-      color: @light-blue;
-    }
-    .meta.property.object.js {
+    .body.js {
+      .support.type.object.console.js {
+        color: @highligth-rose;
+      }
+      .support.function.console.js {
+        color: #bdc0f9;
+      }
+      .variable.language.this.js {
+        color: @highligth-rose;
+      }
       .variable.other.property.static.js {
         color: #bdc0f9;
       }
       .variable.other.property.js {
         color: @light-blue;
       }
-    }
-    .meta.group.braces.curly {
-      .support.type.object.console.js {
-        color: @i-purple;
-      }
-      .support.function.console.js {
-        color: #a389eb;
-      }
-      .variable.language.this.js {
-        color: #ee3486;
-      }
-      .meta.property.class.js {
-        .variable.other.class.js {
-          color: #cdd7f0;
-        }
+      .meta.property.object.js {
         .variable.other.property.static.js {
           color: #bdc0f9;
         }
-      }
-      .meta.property.object.js {
         .variable.other.property.js {
           color: @light-blue;
         }
       }
-      .variable.other.object.js {
-        color: @violet;
-      }
-      .variable.other.readwrite.js {
-        color: @green-highlighter;
-      }
-      .meta.tag.jsx {
-        .entity.other.attribute-name.jsx {
-          color: #167ed4;
+      .meta.group.braces.curly {
+        .support.type.object.console.js {
+          color: @i-purple;
+        }
+        .support.function.console.js {
+          color: #a389eb;
+        }
+        .variable.language.this.js {
+          color: #ee3486;
+        }
+        .meta.property.class.js {
+          .variable.other.class.js {
+            color: #cdd7f0;
+          }
+          .variable.other.property.static.js {
+            color: #bdc0f9;
+          }
+        }
+        .meta.property.object.js {
+          .variable.other.property.js {
+            color: @light-blue;
+          }
+        }
+        .variable.other.object.js {
+          color: @violet;
+        }
+        .variable.other.readwrite.js {
+          color: @green-highlighter;
+        }
+        .meta.tag.jsx {
+          .entity.other.attribute-name.jsx {
+            color: #167ed4;
+          }
         }
       }
-    }
-    .meta.function.arrow.js {
-      .variable.other.readwrite.js {
-        color: #f5b544;
+      .entity.name.function.method.js {
+        color: @function-color;
       }
-    }
-    .meta.group.braces.round {
-      .meta.tag.jsx {
-        .entity.other.attribute-name.jsx {
-          color: #5db9e4;
+      .meta.function.arrow.js {
+        .entity.name.function {
+          color: @function-color;
+        }
+        .variable.other.readwrite.js {
+          color: #f5b544;
+        }
+      }
+      .meta.group.braces.round {
+        .meta.tag.jsx {
+          .entity.other.attribute-name.jsx {
+            color: #5db9e4;
+          }
         }
       }
     }
   }
+  // ### CLASS END ###
   .meta.tag.jsx {
     .entity.name.tag.open.jsx {
       .support.class.component.open.jsx {
