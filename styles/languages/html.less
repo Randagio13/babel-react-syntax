@@ -1,40 +1,40 @@
-.html {
+.syntax--html {
 
-  .meta.tag{
+  .syntax--meta.syntax--tag{
     color: @mono-1;
-    &.any {
+    &.syntax--any {
       color: @mono-1;
     }
   }
 
-  .entity.name.tag {
-    &.block, &.inline, &.name {
+  .syntax--entity.syntax--name.syntax--tag {
+    &.syntax--block, &.syntax--inline, &.syntax--name {
       color: @hue-3;
     }
   }
-  .entity.other.attribute-name{
+  .syntax--entity.syntax--other.syntax--attribute-name{
     color: @hue-4;
-    &.html{
+    &.syntax--html{
       color: @hue-4;
     }
-    &.id.html {
+    &.syntax--id.syntax--html {
       color: @hue-4;
     }
   }
 
-  .punctuation.separator.key-value {
+  .syntax--punctuation.syntax--separator.syntax--key-value {
     color: @mono-1;
   }
 
-  .string.quoted.double {
+  .syntax--string.syntax--quoted.syntax--double {
     color: @hue-6;
 
-    .punctuation.definition.string {
-      &.begin, &.end {
+    .syntax--punctuation.syntax--definition.syntax--string {
+      &.syntax--begin, &.syntax--end {
         color: @hue-6;
       }
 
-      .separator.key-value.html {
+      .syntax--separator.syntax--key-value.syntax--html {
         color: @hue-4;
       }
 
