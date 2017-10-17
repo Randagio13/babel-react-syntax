@@ -1,5 +1,9 @@
 # Babel React Syntax Theme
 
-A simple colorful for Babel ES6 Javascript.
+A simple colorful for Babel Javascript.
 
 ![](https://res.cloudinary.com/randagio13/image/upload/v1463329268/Example_xazaws.png)
+
+-------------------------------------------------------------------------------------------------------------
+
+**Note: You must use Atom v1.13 or above for this theme to work properly.
