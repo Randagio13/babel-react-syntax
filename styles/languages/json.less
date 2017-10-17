@@ -1,31 +1,31 @@
-.source.json {
-  .meta.structure.dictionary.json {
-    & > .string.quoted.json {
-      & > .punctuation.string {
+.syntax--source.syntax--json {
+  .syntax--meta.syntax--structure.syntax--dictionary.syntax--json {
+    & > .syntax--string.syntax--quoted.syntax--json {
+      & > .syntax--punctuation.syntax--string {
         color: @hue-3;
       }
       color: @hue-3;
     }
   }
-  .punctuation.definition.array.begin.json, .punctuation.definition.array.end.json {
+  .syntax--punctuation.syntax--definition.syntax--array.syntax--begin.syntax--json, .syntax--punctuation.syntax--definition.syntax--array.syntax--end.syntax--json {
     font-weight: bold;
     color: @mono-1;
   }
-  .punctuation.definition.dictionary.begin.json,.punctuation.definition.dictionary.end.json{
+  .syntax--punctuation.syntax--definition.syntax--dictionary.syntax--begin.syntax--json,.syntax--punctuation.syntax--definition.syntax--dictionary.syntax--end.syntax--json{
     font-weight: bold;
   }
-  .meta.structure.dictionary.json, .meta.structure.array.json {
-    & > .value.json > .string.quoted.json {
+  .syntax--meta.syntax--structure.syntax--dictionary.syntax--json, .syntax--meta.syntax--structure.syntax--array.syntax--json {
+    & > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json {
       color: @hue-6;
     }
-    & > .value.json > .string.quoted.json > .punctuation {
+    & > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
       color: @hue-6;
     }
-    & > .constant.language.json {
+    & > .syntax--constant.syntax--language.syntax--json {
       color: @hue-1;
     }
   }
-  .constant.language {
+  .syntax--constant.syntax--language {
     color: @amethyst;
   }
 }
