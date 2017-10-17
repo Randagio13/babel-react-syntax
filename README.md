@@ -1,6 +1,6 @@
 # Babel React Syntax Theme
 
-A simple colorful for Babel Javascript.
+A simple, colorful theme for Babel Javascript.
 
 ![](https://res.cloudinary.com/randagio13/image/upload/v1463329268/Example_xazaws.png)
 
