@@ -1,13 +1,17 @@
 
 // Editor styles (background, gutter, guides)
 
-atom-text-editor, // <- remove when Shadow DOM can't be disabled
-:host {
+atom-text-editor // <- remove when Shadow DOM can't be disabled
+ {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
   .line.cursor-line {
-    background-color: @highligth-line;
+    //background-color: @highligth-line;
+    border-bottom: 1px solid @highligth-line;
+    margin-bottom: -1px;
+    border-top: 1px solid @highligth-line;
+    margin-top: -1px;
   }
 
   .invisible {
@@ -25,6 +29,7 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
   .bracket-matcher .region {
     border-bottom: 1px solid @syntax-cursor-color;
     box-sizing: border-box;
+    background-color: @bracket-matcher;
   }
 
   .invisible-character {
@@ -48,7 +53,11 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
 
       &.cursor-line {
         color: @syntax-gutter-text-color-selected;
-        background: @highligth-line;
+        //background: @highligth-line;
+        border-bottom: 1px solid @highligth-line;
+        margin-bottom: -1px;
+        border-top: 1px solid @highligth-line;
+        margin-top: -1px;
       }
 
       .icon-right {
